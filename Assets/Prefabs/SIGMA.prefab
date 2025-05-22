@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &5165846896728825962
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6080627777518873884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 85b59d810b91a2c468a42cc515f22027, type: 3}
 --- !u!1 &7706250778563857317
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +23,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3429108026449281809}
-  - component: {fileID: 65602633903976518}
   - component: {fileID: 54192583575147738}
   m_Layer: 0
   m_Name: SIGMA
@@ -33,19 +46,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65602633903976518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7706250778563857317}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &54192583575147738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,6 +119,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b59d810b91a2c468a42cc515f22027, type: 3}
+--- !u!1 &6080627777518873884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 85b59d810b91a2c468a42cc515f22027,
+    type: 3}
+  m_PrefabInstance: {fileID: 6080627777518906300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6080627777519038780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 85b59d810b91a2c468a42cc515f22027,
