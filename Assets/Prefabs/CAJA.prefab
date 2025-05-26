@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 2163380536000037933}
   - component: {fileID: 65832136791093660}
   - component: {fileID: 54078486572509392}
+  - component: {fileID: 114929148004430184}
+  - component: {fileID: 114928826422399054}
   m_Layer: 0
   m_Name: CAJA
   m_TagString: Untagged
@@ -75,6 +77,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114929148004430184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195680332271267381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c23e0501e521f04f836f03ccdf0510a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
+--- !u!114 &114928826422399054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195680332271267381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5840dfa4845008e4098949c5118a40be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &170905969332219822
 PrefabInstance:
   m_ObjectHideFlags: 0
