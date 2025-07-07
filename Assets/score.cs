@@ -16,15 +16,15 @@ public class score : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void AddScore()
     {
-       
+        scoreM++;
+        UiManager.updatescore(scoreM);
     }
 
     public void Addscore(int scorepoints)
     {
         scoreM += scorepoints;
         UiManager.updatescore(scoreM);
-        UiManager.Addscore(mercaderia.scorePoints);
     }
 }

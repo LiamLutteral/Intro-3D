@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class colisiones : MonoBehaviour
 {
-    public score score;
+    public score Score;
+    public mercaderia Mercaderia;
     private void Start()
     {
-        score = FindObjectOfType<score>();
+        Score = FindObjectOfType<score>();
+        Mercaderia = GetComponent<mercaderia>();
     }
     void OnCollisionEnter(Collision col)
     {
@@ -15,7 +17,7 @@ public class colisiones : MonoBehaviour
         if (col.gameObject.name == "player")
         {
             Destroy(gameObject);
-            score.Addscore();
+            Score.Addscore(Mercaderia.scorePoints);
         }
        
     }
