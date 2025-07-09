@@ -6,18 +6,17 @@ public class colisiones : MonoBehaviour
 {
     public score Score;
     public mercaderia Mercaderia;
-    private void Start()
+    void Start()
     {
         Score = FindObjectOfType<score>();
         Mercaderia = GetComponent<mercaderia>();
     }
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log('a');
         if (col.gameObject.name == "player")
         {
+            Score.AddScore(Mercaderia.scorePoints);
             Destroy(gameObject);
-            Score.Addscore(Mercaderia.scorePoints);
         }
        
     }

@@ -6,14 +6,20 @@ using TMPro;
 public class UImanager : MonoBehaviour
 {
     public TextMeshProUGUI txtscore;
-    // Start is called before the first frame update
+    public TextMeshProUGUI txtHp;
+   
     void Start()
     {
         txtscore.text = "0";
     }
 
-   public void updatescore(int scoreM)
+   public void UpdateScore(int scoreM)
     {
         txtscore.text = scoreM.ToString();
+    }
+
+    public void UpdateHealth(int health)
+    {
+        txtHp.text = health.ToString();
     }
 }
