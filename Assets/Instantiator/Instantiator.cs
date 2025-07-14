@@ -32,4 +32,5 @@ public class Instantiator : MonoBehaviour
             Instantiate(barrilPrefab, position, Quaternion.identity);
         }
     }
+
 }

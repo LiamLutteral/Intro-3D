@@ -7,10 +7,12 @@ public class UImanager : MonoBehaviour
 {
     public TextMeshProUGUI txtscore;
     public TextMeshProUGUI txtHp;
+    public HealthManager healthManager;
    
     void Start()
     {
         txtscore.text = "0";
+        txtHp.text = healthManager.Hp.ToString();
     }
 
    public void UpdateScore(int scoreM)
